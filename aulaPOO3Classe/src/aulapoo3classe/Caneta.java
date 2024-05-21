@@ -7,14 +7,14 @@ public class Caneta {
      float ponta;
      int carga;
      boolean tampada;
-     void status() {
+    /* void status() {
         System.out.println("Modelo: "+ this.modelo);
         System.out.println("Uma caneta " + this.cor);
         System.out.println("Sua ponta e: " + this.ponta);
         System.out.println("Carga: "+ this.carga);
         System.out.println("Esta tampada? " + this.tampada);
         
-        }
+        }*/
         
          void rabiscar(){
             if (this.tampada == true){
@@ -30,7 +30,13 @@ public class Caneta {
          void destampar() {
         this.tampada = false;    
         }
+
+    @Override
+    public String toString() {
+        return "Caneta{" + "modelo=" + modelo + ", cor=" + cor + ", ponta=" + ponta + ", carga=" + carga + ", tampada=" + tampada + '}';
+    }
         
+         
     }
     
 

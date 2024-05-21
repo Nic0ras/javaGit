@@ -15,9 +15,11 @@ public class AulaPOO3Classe {
         c2.cor = "Vermelha";
         c2.ponta = 0.7f;
         c2.tampada = false;
-        c2.status();
+        //c2.status();
         c2.destampar();
         c2.rabiscar();
+        
+        System.out.println(c2.toString());
         
     }
     
